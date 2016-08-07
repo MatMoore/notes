@@ -2,13 +2,16 @@ import time
 from requests_cache import CachedSession
 from collections import namedtuple as NamedTuple
 from enum import Enum
-from graphviz import Digraph
+from graphviz import Digraph, Graph
 
 session = CachedSession(cache_name='govuk_cache')
 
 Topic = NamedTuple('Topic', ('name', 'base_path', 'document_type'))
-dot = Digraph(comment='GOV.UK Topic-ish Pages', format='png')
+dot = Digraph(comment='GOV.UK Topic-ish Pages', format='png', engine='dot')
+#dot = Digraph(comment='GOV.UK Topic-ish Pages', format='svg', engine='fdp')
 dot.body.extend(['rankdir=RL'])
+dot.body.extend(['size="100,100" splines=true overlap=false'])
+#dot.body.append('graph [splines=true overlap=false]')
 
 SEARCH_URL = 'https://www.gov.uk/api/search.json'
 
@@ -16,9 +19,13 @@ SEARCH_URL = 'https://www.gov.uk/api/search.json'
 class DocumentType(Enum):
     """
     Document type of a topic-ish page
+
+    Value is the rummager "format", which may differ from the content store
+    document type.
     """
     mainstream_browse_page = 'mainstream_browse_page'
-    topic = 'topic'
+    topic = 'specialist_sector'
+    specialist_sector = 'specialist_sector'
     document_collection = 'document_collection'
 
 
@@ -46,12 +53,13 @@ def pages_tagged_to_browse_page(topic, fmt):
     response = session.get(
         SEARCH_URL,
         params={
-            'filter_format': fmt,
-            'filter_mainstream_browse_pages': topic.base_path,
-            'fields': ['title', 'slug', 'format']
+            'filter_format': fmt.value,
+            'filter_mainstream_browse_pages': topic.base_path.replace('/browse/', ''),
+            'fields[]': ['title', 'slug', 'format']
         }
     )
-    print(response.text[:100])
+    print(response.request.url)
+    response.raise_for_status()
     return parse_rummager_topics(response.json()['results'])
 
 
@@ -59,7 +67,15 @@ def pages_tagged_to_topic_page(topic, fmt):
     """
     Get pages with a particular format that are tagged to a topic page
     """
-    response = session.get(SEARCH_URL, params={'format': fmt, 'filter_topics': topic.base_path})
+    response = session.get(
+        SEARCH_URL,
+        params={
+            'filter_format': fmt.value,
+            'filter_specialist_sectors': topic.base_path.replace('/topic/', ''),
+            'fields[]': ['title', 'slug', 'format']
+        }
+    )
+    response.raise_for_status()
     return parse_rummager_topics(response.json()['results'])
 
 
@@ -73,7 +89,7 @@ def parse_rummager_topics(results):
         pages.append(
             Topic(
                 name=result['title'],
-                base_path=result['base_path'],
+                base_path=result['slug'],
                 document_type=DocumentType[result['format']]
             )
         )
@@ -86,7 +102,8 @@ def topic_children(topic):
     Get subtopics of a topic
     """
     response = session.get(content_store_url(topic.base_path))
-    return parse_content_store_topics(response.json()['expanded_links']['children'])
+    response.raise_for_status()
+    return parse_content_store_topics(response.json()['expanded_links'].get('children', []))
 
 
 def browse_page_children(topic):
@@ -99,6 +116,7 @@ def browse_page_children(topic):
         key = 'second_level_browse_pages'
 
     response = session.get(content_store_url(topic.base_path))
+    response.raise_for_status()
     return parse_content_store_topics(response.json()['expanded_links'][key])
 
 
@@ -110,7 +128,7 @@ def parse_content_store_topics(children):
         try:
             document_type = DocumentType[document_type_name]
         except KeyError:
-            print('Ignoring document type {}'.format(document_type))
+            print('Ignoring document type {}'.format(document_type_name))
             continue
 
         topic = Topic(
@@ -128,7 +146,8 @@ def node(topic, **kwargs):
         return
 
     dot.node(
-        topic.name,
+        topic.name.replace(':',' - '),
+        label=topic.name,
         shape=SHAPES[topic.document_type],
         **kwargs
     )
@@ -136,7 +155,9 @@ def node(topic, **kwargs):
 
 
 def edge(tail, head, **kwargs):
-    dot.edge(tail_name=tail.name, head_name=head.name, **kwargs)
+    tail_name = tail.name.replace(':',' - ')
+    head_name = head.name.replace(':',' - ')
+    dot.edge(tail_name=tail_name, head_name=head_name, **kwargs)
 
 
 def is_second_level(topic):
@@ -149,7 +170,7 @@ def is_second_level(topic):
     return len(topic.base_path.strip('/').split('/')) > 2
 
 
-def crawl(start, depth=1):
+def crawl(start, depth=3):
     node(start)
 
     if depth <= 0:
@@ -158,33 +179,39 @@ def crawl(start, depth=1):
     if start.document_type == DocumentType.mainstream_browse_page:
         if not is_second_level(start):
             for child in browse_page_children(start):
+                node(child)
                 edge(child, start, label='Belongs to')
                 crawl(child, depth=depth-1)
 
         for tagged in pages_tagged_to_browse_page(start, DocumentType.topic):
-            edge(child, start, label='Is about')
+            node(tagged)
+            edge(tagged, start, label='Is about')
             crawl(tagged, depth=depth-1)
 
         for tagged in pages_tagged_to_browse_page(start, DocumentType.document_collection):
-            edge(child, start, label='Is about')
+            node(tagged)
+            edge(tagged, start, label='Is about')
             crawl(tagged, depth=depth-1)
 
     elif start.document_type == DocumentType.topic:
-        for child in browse_page_children(start):
+        for child in topic_children(start):
+            node(child)
             edge(child, start, label='Belongs to')
             crawl(child, depth=depth-1)
 
-        for tagged in pages_tagged_to_topic(start, DocumentType.document_collection):
-            edge(child, start, label='Is about')
+        for tagged in pages_tagged_to_topic_page(start, DocumentType.document_collection):
+            node(tagged)
+            edge(tagged, start, label='Is about')
             crawl(tagged, depth=depth-1)
 
     else:
         return
 
 
-start = Topic('GOV.UK Homepage', base_path='/browse', document_type=DocumentType.mainstream_browse_page)
-crawl(start)
+browse = Topic('GOV.UK Homepage', base_path='/browse', document_type=DocumentType.mainstream_browse_page)
+#topics = Topic('Specialist Topics', base_path='/topic', document_type=DocumentType.topic)
+crawl(browse)
+#crawl(topics)
 
-print(dot.source)
 dot.render('output/govuk-topic-graph', view=True)
 
