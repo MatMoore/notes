@@ -1,7 +1,9 @@
 GOV.UK Frankentaxonomy
 ======================
 
-This is a suggested way to join together the top level structure for GOV.UK and make navigating it more consistent. It's a "work-in-progress" taxonomy that is intended to evolve over time.
+This is a suggested way to join together the top level structure for GOV.UK and make navigating it more consistent.
+
+It's a "work-in-progress" taxonomy that is intended to evolve over time.
 
 Background
 --------
