@@ -48,7 +48,7 @@ It's called the frankentaxonomy because it's an attempt to link together multipl
 
 In this model, the structure of those top level topics can be improved one at a time without breaking the bigger picture of how GOV.UK fits together.
 
-Better topic pages enable larger and more complete topics
+Better topic pages enable larger, more complete topics
 -------
 
 In many cases, a "topic" is displayed as just a list of pages, sometimes curated curated in groups. This will not scale when a topic grows to include different kinds of content, so there should be a better way to browse within a topic. If the topic pages are flexible enough, the underlying taxonomy can evolve over time.
