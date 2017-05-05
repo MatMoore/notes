@@ -28,8 +28,8 @@ Alternatively you can use the head plugin UI at [http://dev.gov.uk:9200/_plugin/
 
 ## Exercises
 
-- [Query the content indexes](./01 - Query content indexes.md)
-- [Match a single field](./02 - Match a single field.md)
+- [Query the content indexes](01_query content indexes.md)
+- [Match a single field](02_match_single_field.md)
 - Debug analysis
 - Match multiple fields
 - Change the analyzer
