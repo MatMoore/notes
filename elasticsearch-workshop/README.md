@@ -28,7 +28,7 @@ Alternatively you can use the head plugin UI at [http://dev.gov.uk:9200/_plugin/
 
 ## Exercises
 
-- [Query the content indexes](01_query content_indexes.md)
+- [Query the content indexes](01_query_content_indexes.md)
 - [Match a single field](02_match_single_field.md)
 - Debug analysis
 - Match multiple fields
