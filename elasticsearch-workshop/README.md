@@ -31,8 +31,7 @@ Alternatively you can use the head plugin UI at [http://dev.gov.uk:9200/_plugin/
 - [Query the content indexes](01_query_content_indexes.md)
 - [Match a single field](02_match_single_field.md)
 - [Debug analysis](03_debug_analysis.md)
-- Match multiple fields
-- Combine clauses
-- Match phrases
-- Ignore common terms
-- Incorporate non-text signals
+- [Match multiple fields](04_match_multiple.md)
+- [Match multiple terms](05_match_phrases.md)
+- [Combine queries](06_combine_queries.md)
+- Aggregate documents
