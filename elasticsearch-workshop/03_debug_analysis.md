@@ -10,6 +10,8 @@ Let's look at how the index is configured:
 GET mainstream/_settings
 ```
 
+(Note: this endpoint won't work if you pass body JSON)
+
 In here you should see the `default` analyzer:
 
 ```json
