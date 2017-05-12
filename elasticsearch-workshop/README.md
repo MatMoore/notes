@@ -33,5 +33,5 @@ Alternatively you can use the head plugin UI at [http://dev.gov.uk:9200/_plugin/
 - [Debug analysis](03_debug_analysis.md)
 - [Match multiple fields](04_match_multiple.md)
 - [Match multiple terms](05_match_phrases.md)
-- [Combine queries](06_combine_queries.md)
+- [Combine queries](06_combining_queries.md)
 - Aggregate documents
