@@ -23,4 +23,4 @@ GET detailed,mainstream,government/_search
 }
 ```
 
-You should see a total of around 32,000 hits.
+You should see a total of around 320,000 hits.
