@@ -24,7 +24,7 @@ Set the server to `dev.gov.uk:9200` and press the play button to send the query.
 
 Ignore any warnings about GET requests not being supported.
 
-Alternatively you can use the head plugin UI at [http://dev.gov.uk:9200/_plugin/head]() (click on the "any request" tab).
+Alternatively you can use the head plugin UI at [http://dev.gov.uk:9200/_plugin/head](http://dev.gov.uk:9200/_plugin/head) (click on the "any request" tab).
 
 ## Exercises
 
