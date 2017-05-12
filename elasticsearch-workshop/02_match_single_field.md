@@ -74,11 +74,11 @@ See [theory behind relevance scoring](https://www.elastic.co/guide/en/elasticsea
 
 Let's compare the top two.
 
-| Measure                          | Voting browse page | Register to vote |
-| -------------------------------- | ------------------ | ---------------- |
-| Term Frequency (TF)              | 1                  | 1                |
-| Inverse Document Frequency (IDF) | 9.16803            | 9.16803          |
-| FieldNorm                        |  1                 | 0.625            |
+| Measure                          | "Voting" browse page | "Register to vote" |
+| -------------------------------- | -------------------- | ------------------ |
+| Term Frequency (TF)              | 1                    | 1                  |
+| Inverse Document Frequency (IDF) | 9.16803              | 9.16803            |
+| FieldNorm                        |  1                   | 0.625              |
 
 In this case:
 - the term frequency was 1 in both cases (both titles are considered to have one occurrence of "vote")
