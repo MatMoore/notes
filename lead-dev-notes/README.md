@@ -4,8 +4,8 @@
 
 See the [collection of resources](https://docs.google.com/document/d/1IbBTETFZ7C5li7vVjWOzTnnQrtftsKNldNIG-7VHK18/edit#heading=h.sn8v26a4d3z0) mentioned by speakers and in the slack channel.
 
-## The Constant Life of a Tech Lead - [slides](https://www.slideshare.net/thekua/constant-life-of-a-tech-lead)
-Patrick Kua
+## The Constant Life of a Tech Lead
+Patrick Kua - [slides](https://www.slideshare.net/thekua/constant-life-of-a-tech-lead)
 
 Tech leads have to balance:
 - Tech
