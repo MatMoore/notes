@@ -4,7 +4,7 @@
 
 See the [collection of resources](https://docs.google.com/document/d/1IbBTETFZ7C5li7vVjWOzTnnQrtftsKNldNIG-7VHK18/edit#heading=h.sn8v26a4d3z0) mentioned by speakers and in the slack channel.
 
-## The Constant Life of a Tech Lead
+## The Constant Life of a Tech Lead - [slides](https://www.slideshare.net/thekua/constant-life-of-a-tech-lead)
 Patrick Kua
 
 Tech leads have to balance:
@@ -42,7 +42,7 @@ Prioritise tasks using the [Eisenhower matrix](http://jamesclear.com/eisenhower-
 [Double loop learning](https://en.wikipedia.org/wiki/Double_loop_learning) = use feedback to reflect on your mental models as well as behaviour.
 
 ## Things You Wish You Shared With Your Team Before They Agreed on That Deadline
-Dominika Rogala
+Dominika Rogala - [slides](https://speakerdeck.com/kwugirl/ask-vs-guess-culture-communication-the-lead-developer-uk)
 
 In the UK, there are 252 working days in a year.
 
@@ -61,7 +61,7 @@ Example: I just need to wait for this to thing to run. But in reality, there's s
 Everyone has a default priority (low cost, time, quality). Make sure team are aligned.
 
 ## How to Talk to Earthlings?
-Adrian Howard
+Adrian Howard - [slides](https://www.slideshare.net/adrianh/how-to-talk-to-earthlings)
 
 Treat 1-1 conversations with members of your team like user research.
 
@@ -79,7 +79,7 @@ It's not your job to jump in and solve every problem. [Be like Alfred, not Batma
 Books: [Practical Empathy](https://www.goodreads.com/book/show/24507142-practical-empathy?from_search=true), [Interviewing Users](https://www.goodreads.com/book/show/17869520-interviewing-users).
 
 ## Ask vs. Guess Culture Communication
-Katherine Wu
+Katherine Wu - [slides](https://speakerdeck.com/kwugirl/ask-vs-guess-culture-communication-the-lead-developer-uk)
 
 Concept is from an old [ask metafilter thread](http://ask.metafilter.com/55153/Whats-the-middle-ground-between-FU-and-Welcome#830421).
 
@@ -113,6 +113,8 @@ When setting goals:
 Ask colleagues to talk about things you want to learn more about.
 
 ## 5 Features of a Good API
+Rob Allen - [slides](https://speakerdeck.com/akrabat/5-features-of-a-good-api-2)
+
 HTTP RFCs: [RFC 7230](https://tools.ietf.org/html/rfc7230), [RFC 7231](https://tools.ietf.org/html/rfc7231)
 
 Error entities should be first class. Use something like problem details ([RFC 7807](https://tools.ietf.org/html/rfc7807)).
@@ -124,7 +126,7 @@ Link to documentation in responses. Can be a header. [RFC 6906](https://tools.ie
 You need user identification, app identification. It's worth setting up rate limiting from the beginning even if the limit is set really high.
 
 ## Leadership Lessons from the Agile Manifesto
-Anjuan Simmons
+Anjuan Simmons - [slides](https://speakerdeck.com/anjuan/leadership-lessons-from-the-agile-manifesto)
 
 A mentor is someone who already completed "the hero's journey" and offers advice.
 
@@ -146,7 +148,7 @@ Cate Huston
 Sander Hoogendoorn
 
 ## Better: Fearless Feedback for Software Teams
-Erika Carlson
+Erika Carlson - [slides](https://www.slideshare.net/ErikaCarlson4/better-fearless-feedback-for-software-teams)
 
 Purpose of feedback is:
 - increasing awareness
@@ -191,19 +193,19 @@ Constructive feedback:
 - Confirm understanding
 
 ## The Original Skunk Works
-Nickolas Means
+Nickolas Means - [slides](https://speakerdeck.com/nmeans/the-original-skunk-works-1)
 
 Hire smart people and give them autonomy.
 
 ## Fail Fast, Fail Smart, Succeed
-Kevin Goldsmith
+Kevin Goldsmith - [slides](https://www.slideshare.net/kevingoldsmith/fail-safe-fail-smart-succeed)
 
 Run post-mortems on successful projects.
 
 To celebrate failure, spotify have a "fail wall".
 
 ## We're Agile, We Don't Do Documentation
-Birgitta Boeckeler
+Birgitta Boeckeler - [slides](https://speakerdeck.com/birgitta410/were-agile-we-dont-do-documentation)
 
 ![I just heard Alice explain that complex thing. AGAIN.](https://pbs.twimg.com/media/DB3rB30VYAMJuhq.jpg:large)
 
@@ -245,7 +247,7 @@ Mathias Meyer
 Books: [The open organisation](https://www.redhat.com/en/explore/the-open-organization-book), [Turn the Ship Around!](http://www.davidmarquet.com/)
 
 ## Big Rewrite Strikes Again
-Sabrina Leandro
+Sabrina Leandro - [slides](https://speakerdeck.com/saleandro/big-rewrite-strikes-again-lead-dev-london-2017)
 
 Getting support for a rewrite:
 - Make business plan
@@ -267,7 +269,7 @@ Fun stuff:
 - Use gamification to celebrate progress (like badges with party poppers attached)
 
 ## Continuous A11y - Automate the Hell Out of It
-Patrik Karisch
+Patrik Karisch - [slides](https://slides.pixelart.at/2017-06-09/leaddev/ca11y/#/)
 
 ## Mentoring Junior Engineers @ Slack HQ
 Carly Robinson - [slides](https://speakerdeck.com/carlyhasredhair/mentoring-junior-engineers-at-slack-the-lead-developer-uk-2017)
@@ -321,7 +323,7 @@ About safety, feedback, advocacy.
 - Should you be giving others feedback too
 
 ## Centralising the Right Things
-Tom Booth
+Tom Booth - [slides](https://speakerdeck.com/tombooth/centralising-the-right-things)
 
 ## Leading by Speaking
 Lara Hogan
