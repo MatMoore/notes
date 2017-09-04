@@ -1,4 +1,4 @@
-# The Lead Developer UK - 2007
+# The Lead Developer UK - 2017
 
 > The Lead Developer UK 2017 is a 2-day conference featuring practical advice from experts on leading and motivating your team and high-level sessions on new and disruptive technologies.
 
