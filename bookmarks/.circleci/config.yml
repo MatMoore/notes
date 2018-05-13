@@ -10,4 +10,4 @@ jobs:
           name: Check for dead links
           command: |
               gem install awesome_bot
-              awesome_bot `find . -name '*.md'` --base-url "https://github.com/matmoore/bookmarks/blob/$CIRCLE_SHA1/"
+              awesome_bot `find . -name '*.md'` --allow-dupe --base-url "https://github.com/matmoore/bookmarks/blob/$CIRCLE_SHA1/"
