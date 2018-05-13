@@ -1,5 +1,11 @@
 # Pandas
 
+> pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language.
+
+[https://pandas.pydata.org/](https://pandas.pydata.org/)
+
+## How to use it
+
 [Pandas cheat sheet](https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf) (pdf) - useful if you want to get something done quickly and you don't remember what stuff is called.
 
 [Exploratory Data Analysis with NumPy and Pandas](https://www.grahamwheeler.com/posts/exploratory-data-analysis-with-numpy-and-pandas.html) - A good introduction to Pandas for exploring and visualising data, with recommendations for further reading
