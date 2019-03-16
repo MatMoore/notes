@@ -7,6 +7,8 @@ This is a list of some people, books, blogs, videos, podcasts etc that have infl
 - Mattias Petter Johansson - [Fun Fun Function](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q) youtube channel
 - Andrew Hunt, David Thomas - [The Pragmatic Programmer](https://www.nceclusters.no/globalassets/filer/nce/diverse/the-pragmatic-programmer.pdf)
 - Martin Fowler - [Refactoring](https://martinfowler.com/books/refactoring.html), [Strangler Applications](https://www.martinfowler.com/bliki/StranglerApplication.html)
+- Sandi Metz - [The Magic Tricks of Testing](https://www.youtube.com/watch?v=URSWYvyc42M)
+- Peter Naur - [Programming as Theory Building](http://pages.cs.wisc.edu/~remzi/Naur.pdf)
 
 ## Making teams productive
 - Oren Ellenbogen - [Software lead weekly](http://softwareleadweekly.com/) - an email newsletter
@@ -34,11 +36,12 @@ This is a list of some people, books, blogs, videos, podcasts etc that have infl
 - Guy Steele - [Growing a language](https://www.youtube.com/watch?v=_ahvzDzKdB0)
 - Raymond Hettinger - [Transforming your code into beautiful idiomatic python](https://youtu.be/OSGv2VnC0go)
 
+## Data
+- Jenifer Widom - [Introduction to databases course](https://lagunita.stanford.edu/courses/DB/2014/SelfPaced/about)
+- Hadley Wickham - [Tidy Data](http://vita.had.co.nz/papers/tidy-data.pdf)
+
 ## Machine learning
 - Andrew Ng - [Introductory coursera course](https://www.coursera.org/learn/machine-learning), [Machine learning yearning](https://www.mlyearning.org/)
-
-## Databases
-- Jenifer Widom - [Introduction to databases course](https://lagunita.stanford.edu/courses/DB/2014/SelfPaced/about)
 
 ## Algorithms
 - Tim Roughgarden - [Design and Analysis of Algorithms course](https://www.youtube.com/watch?v=yRM3sc57q0c&list=PLXFMmlk03Dt7Q0xr1PIAriY5623cKiH7V)
