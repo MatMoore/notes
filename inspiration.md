@@ -56,6 +56,7 @@ This is a list of some people, books, blogs, videos, podcasts etc that have infl
 - Martin Odersky - [Functional Programming Principles in Scala course](https://www.coursera.org/learn/progfun1)
 
 ## Security
+- Dafydd Stuttard, Marcus Pinto - [The Web Application Hacker's Handbook](https://archive.org/details/TheWebApplicationHackersHandbook2ndEdition)
 - Michael Brunton-Spall - [Cyber weekly](https://tinyletter.com/CyberWeekly) - an email newsletter
 - [cryptopals crypto challenges](https://cryptopals.com/) from Matasano - a guided path to learning cryptography
 - Dan Boneh - [Cryptography I course](https://www.coursera.org/learn/crypto)
