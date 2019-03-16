@@ -2,16 +2,6 @@
 
 This is a list of some books, blogs, videos, podcasts etc that have influenced how I think about things.
 
-## Interactvity and alternative programming environments
-
-- Bret Victor - [Inventing on Principle](https://www.youtube.com/watch?v=8QiPFmIMxFc), [Future of Programming](https://www.youtube.com/watch?v=8pTEmbeENF4)
-- Alan Kay - [Doing with images makes symbols](https://archive.org/details/AlanKeyD1987)
-- Don Norman - [The Design of Everyday things](http://www.nixdell.com/classes/HCI-and-Design-Spring-2017/The-Design-of-Everyday-Things-Revised-and-Expanded-Edition.pdf) (I never finished this, but I need to!)
-- [Nicky Case](https://ncase.me/) - explorable explanations
-- [Observable](https://observablehq.com/) notebooks (javascript)
-- [Jupyter](https://jupyter.org/) notebooks (python) and [Collaboratory](https://colab.research.google.com/) from google
-- [Glitch](https://glitch.com/) - remixable applications
-
 ## Developing software
 - Scott Hanselman - [Hanselminutes](https://hanselminutes.com/) podcast
 - Mattias Petter Johansson - [Fun Fun Function](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q) youtube channel
@@ -29,6 +19,15 @@ This is a list of some books, blogs, videos, podcasts etc that have influenced h
 - Russell Davies, Ella Fitzsimmons, Matthew Sheret and Giles Turnbull - [Doing Presentations](http://www.doingpresentations.com)
 - Giles Turnbull - [What we mean when we say show the thing](https://gdsengagement.blog.gov.uk/2016/11/04/what-we-mean-when-we-say-show-the-thing/)
 - [Liberating structures](http://www.liberatingstructures.com/)
+
+## Interactvity and alternative programming environments
+- Bret Victor - [Inventing on Principle](https://www.youtube.com/watch?v=8QiPFmIMxFc), [Future of Programming](https://www.youtube.com/watch?v=8pTEmbeENF4)
+- Alan Kay - [Doing with images makes symbols](https://archive.org/details/AlanKeyD1987)
+- Don Norman - [The Design of Everyday things](http://www.nixdell.com/classes/HCI-and-Design-Spring-2017/The-Design-of-Everyday-Things-Revised-and-Expanded-Edition.pdf) (I never finished this, but I need to!)
+- [Nicky Case](https://ncase.me/) - explorable explanations
+- [Observable](https://observablehq.com/) notebooks (javascript)
+- [Jupyter](https://jupyter.org/) notebooks (python) and [Collaboratory](https://colab.research.google.com/) from google
+- [Glitch](https://glitch.com/) - remixable applications
 
 ## Programming languages
 - Guy Steele - [Growing a language](https://www.youtube.com/watch?v=_ahvzDzKdB0)
@@ -53,6 +52,7 @@ This is a list of some books, blogs, videos, podcasts etc that have influenced h
 
 ## Generally interesting stuff in no particular order
 - [99% Invisible podcast](https://99percentinvisible.org/) (design and architecture)
+- Melvin Bragg - [In Our Time podcast](https://www.bbc.co.uk/programmes/b006qykl)
 - [Vi Hart](https://www.youtube.com/user/Vihart/videos) (mathematics)
 - Destin Sandlin - [Smarter Every Day](https://www.youtube.com/channel/UC6107grRI4m0o2-emgoDnAA) (physics)
 - [Veritasium](https://www.youtube.com/channel/UCHnyfMqiRRG1u-2MsSQLbXA) (physics)
