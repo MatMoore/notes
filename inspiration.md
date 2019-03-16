@@ -13,6 +13,7 @@ This is a list of some books, blogs, videos, podcasts etc that have influenced h
 - Patrick Kua - [Talking with tech leads](https://www.goodreads.com/book/show/23270194-talking-with-tech-leads)
 - Jocelyn Goldfein - [Culture is the behaviour you reward and punish](https://jocelyngoldfein.com/culture-is-the-behavior-you-reward-and-punish-7e8e75c6543e)
 - [Agile Retrospective Wiki](http://retrospectivewiki.org/index.php?title=Agile_Retrospective_Resource_Wiki)
+- [Detecting Agile BS](https://media.defense.gov/2018/Oct/09/2002049591/-1/-1/0/DIB_DETECTING_AGILE_BS_2018.10.05.PDF) from the US Department of Defense
 - Michael Nygard - [Documenting Architecture Decisions](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions)
 
 ## Communicating
