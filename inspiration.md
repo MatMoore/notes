@@ -47,7 +47,7 @@ This is a list of some people, books, blogs, videos, podcasts etc that have infl
 - Tim Roughgarden - [Design and Analysis of Algorithms course](https://www.youtube.com/watch?v=yRM3sc57q0c&list=PLXFMmlk03Dt7Q0xr1PIAriY5623cKiH7V)
 
 ## Functional programming
-- Martin Odersky - [Functional Programming Principles in Scala](https://www.coursera.org/learn/progfun1)
+- Martin Odersky - [Functional Programming Principles in Scala course](https://www.coursera.org/learn/progfun1)
 
 ## Security
 - Michael Brunton-Spall - [Cyber weekly](https://tinyletter.com/CyberWeekly) - an email newsletter
