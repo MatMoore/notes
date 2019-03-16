@@ -1,6 +1,6 @@
 # Inspiration
 
-This is a list of some books, blogs, videos, podcasts etc that have influenced how I think about things.
+This is a list of some people, books, blogs, videos, podcasts etc that have influenced how I think about things.
 
 ## Developing software
 - Scott Hanselman - [Hanselminutes](https://hanselminutes.com/) podcast
