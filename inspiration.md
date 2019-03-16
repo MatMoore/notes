@@ -18,13 +18,17 @@ This is a list of some people, books, blogs, videos, podcasts etc that have infl
 - Jocelyn Goldfein - [Culture is the behaviour you reward and punish](https://jocelyngoldfein.com/culture-is-the-behavior-you-reward-and-punish-7e8e75c6543e)
 - [Agile Retrospective Wiki](http://retrospectivewiki.org/index.php?title=Agile_Retrospective_Resource_Wiki)
 - [Detecting Agile BS](https://media.defense.gov/2018/Oct/09/2002049591/-1/-1/0/DIB_DETECTING_AGILE_BS_2018.10.05.PDF) from the US Department of Defense
+- Andrew Chen - [Benefit-Driven Metrics: Measure the lives you save, not the life preservers you sell](https://andrewchen.co/benefit-driven-metrics-measure-the-lives-you-save-not-the-life-preservers-you-sell/)
 - Michael Nygard - [Documenting Architecture Decisions](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions)
+- Dave Rogers - [Toxic Technology - The Growing Legacy Threat](https://blog.usejournal.com/toxic-technology-the-growing-legacy-threat-b95ad098a339)
+- Matt Russell - [How to lead when you have no authority](https://medium.com/swlh/how-to-lead-when-you-have-no-authority-9f22206356d4)
 
 ## Communicating
 - Russell Davies, Ella Fitzsimmons, Matthew Sheret and Giles Turnbull - [Doing Presentations](http://www.doingpresentations.com)
 - Giles Turnbull - [What we mean when we say show the thing](https://gdsengagement.blog.gov.uk/2016/11/04/what-we-mean-when-we-say-show-the-thing/)
 - [Liberating structures](http://www.liberatingstructures.com/)
 - [Tuple's Pair Programming Guide](https://tuple.app/pair-programming-guide/)
+- Felienne - [Explicit Direct Instruction in Programming Education](https://resources.rstudio.com/rstudio-conf-2019/opening-keynote-day2)
 
 ## Interactivity
 - Bret Victor - [Inventing on Principle](https://www.youtube.com/watch?v=8QiPFmIMxFc), [Future of Programming](https://www.youtube.com/watch?v=8pTEmbeENF4)
@@ -35,25 +39,19 @@ This is a list of some people, books, blogs, videos, podcasts etc that have infl
 - [Jupyter](https://jupyter.org/) notebooks (python) and [Collaboratory](https://colab.research.google.com/) from google
 - [Glitch](https://glitch.com/) - remixable applications
 
-## Programming languages
-- Guy Steele - [Growing a language](https://www.youtube.com/watch?v=_ahvzDzKdB0)
-- Raymond Hettinger - [Transforming your code into beautiful idiomatic python](https://youtu.be/OSGv2VnC0go)
-
 ## Data
 - Jenifer Widom - [Introduction to databases course](https://lagunita.stanford.edu/courses/DB/2014/SelfPaced/about)
 - Hadley Wickham - [Tidy Data](http://vita.had.co.nz/papers/tidy-data.pdf)
-
-## Machine learning
+- Brandur Leach, Stripe - [APIs as infrastructure: future-proofing Stripe with versioning](https://stripe.com/blog/api-versioning)
 - Andrew Ng - [Machine learning course](https://www.coursera.org/learn/machine-learning), [Machine learning yearning](https://www.mlyearning.org/)
 
-## Human learning
-- Felienne - [Explicit Direct Instruction in Programming Education](https://resources.rstudio.com/rstudio-conf-2019/opening-keynote-day2)
+## Programming languages
+- Guy Steele - [Growing a language](https://www.youtube.com/watch?v=_ahvzDzKdB0)
+- Raymond Hettinger - [Transforming your code into beautiful idiomatic python](https://youtu.be/OSGv2VnC0go)
+- Martin Odersky - [Functional Programming Principles in Scala course](https://www.coursera.org/learn/progfun1)
 
 ## Algorithms
 - Tim Roughgarden - [Design and Analysis of Algorithms course](https://www.youtube.com/watch?v=yRM3sc57q0c&list=PLXFMmlk03Dt7Q0xr1PIAriY5623cKiH7V)
-
-## Functional programming
-- Martin Odersky - [Functional Programming Principles in Scala course](https://www.coursera.org/learn/progfun1)
 
 ## Security
 - Dafydd Stuttard, Marcus Pinto - [The Web Application Hacker's Handbook](https://archive.org/details/TheWebApplicationHackersHandbook2ndEdition)
