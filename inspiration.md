@@ -21,7 +21,7 @@ This is a list of some people, books, blogs, videos, podcasts etc that have infl
 - Giles Turnbull - [What we mean when we say show the thing](https://gdsengagement.blog.gov.uk/2016/11/04/what-we-mean-when-we-say-show-the-thing/)
 - [Liberating structures](http://www.liberatingstructures.com/)
 
-## Interactivity and alternative programming environments
+## Interactivity
 - Bret Victor - [Inventing on Principle](https://www.youtube.com/watch?v=8QiPFmIMxFc), [Future of Programming](https://www.youtube.com/watch?v=8pTEmbeENF4)
 - Alan Kay - [Doing with images makes symbols](https://archive.org/details/AlanKeyD1987)
 - Don Norman - [The Design of Everyday things](http://www.nixdell.com/classes/HCI-and-Design-Spring-2017/The-Design-of-Everyday-Things-Revised-and-Expanded-Edition.pdf) (I never finished this, but I need to!)
