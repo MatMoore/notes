@@ -20,7 +20,7 @@ This is a list of some books, blogs, videos, podcasts etc that have influenced h
 - Giles Turnbull - [What we mean when we say show the thing](https://gdsengagement.blog.gov.uk/2016/11/04/what-we-mean-when-we-say-show-the-thing/)
 - [Liberating structures](http://www.liberatingstructures.com/)
 
-## Interactvity and alternative programming environments
+## Interactivity and alternative programming environments
 - Bret Victor - [Inventing on Principle](https://www.youtube.com/watch?v=8QiPFmIMxFc), [Future of Programming](https://www.youtube.com/watch?v=8pTEmbeENF4)
 - Alan Kay - [Doing with images makes symbols](https://archive.org/details/AlanKeyD1987)
 - Don Norman - [The Design of Everyday things](http://www.nixdell.com/classes/HCI-and-Design-Spring-2017/The-Design-of-Everyday-Things-Revised-and-Expanded-Edition.pdf) (I never finished this, but I need to!)
@@ -49,14 +49,3 @@ This is a list of some books, blogs, videos, podcasts etc that have influenced h
 - Michael Brunton-Spall - [Cyber weekly](https://tinyletter.com/CyberWeekly) - an email newsletter
 - [cyrptopals crypto challenges](https://cryptopals.com/) from Matasano - a guided path to learning cryptography
 - Dan Boneh - [Cryptography I](https://www.coursera.org/learn/crypto) on coursera
-
-## Generally interesting stuff in no particular order
-- [99% Invisible podcast](https://99percentinvisible.org/) (design and architecture)
-- Melvin Bragg - [In Our Time podcast](https://www.bbc.co.uk/programmes/b006qykl)
-- [Vi Hart](https://www.youtube.com/user/Vihart/videos) (mathematics)
-- Destin Sandlin - [Smarter Every Day](https://www.youtube.com/channel/UC6107grRI4m0o2-emgoDnAA) (physics)
-- [Veritasium](https://www.youtube.com/channel/UCHnyfMqiRRG1u-2MsSQLbXA) (physics)
-- [Sally Le Page](https://www.youtube.com/channel/UC9AUeAvdEVJfyS9rd9pvp8g) (science)
-- Inés Dawson - [Draw Curiousity](https://www.youtube.com/channel/UCOs_jEnQF2ePJzjJTgRtunA) (science and language)
-- [Simone Giertz](https://www.youtube.com/channel/UC3KEoMzNz8eYnwBC34RaKCQ) (the queen of shitty robots)
-- [Tom Scott](https://www.youtube.com/user/enyay) (amazing places, things you might not know)
