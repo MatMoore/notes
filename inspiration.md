@@ -2,7 +2,7 @@
 
 This is a list of some books, blogs, videos, podcasts etc that have influenced how I think about things.
 
-## User interfaces, interactvity, alternative programming environments
+## Interactvity and alternative programming environments
 
 - Bret Victor - [Inventing on Principle](https://www.youtube.com/watch?v=8QiPFmIMxFc), [Future of Programming](https://www.youtube.com/watch?v=8pTEmbeENF4)
 - Alan Kay - [Doing with images makes symbols](https://archive.org/details/AlanKeyD1987)
