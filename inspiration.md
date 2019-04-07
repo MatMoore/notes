@@ -12,6 +12,7 @@ This is a list of some people, books, blogs, videos, podcasts etc that have infl
 - Sandi Metz - [The Magic Tricks of Testing](https://www.youtube.com/watch?v=URSWYvyc42M)
 - Peter Naur - [Programming as Theory Building](http://pages.cs.wisc.edu/~remzi/Naur.pdf)
 - Julia Evans - [Zines](https://wizardzines.com/), [talks](https://jvns.ca/talks/)
+- Heroku - [The 12 Factor App](https://12factor.net/)
 
 ## Leading teams
 *Helping teams work together and making technical decisions*
@@ -87,7 +88,7 @@ This is a list of some people, books, blogs, videos, podcasts etc that have infl
 - The Guardian - [Pairing exercises](https://www.theguardian.com/info/developer-blog/2016/jan/20/the-guardians-new-pairing-exercises)
 
 ## Learning and development
-*Learning pathways, career pathways, deliberate practice*
+*Learning pathways, career pathways, deliberate practice, teaching*
 
 - Felienne - [Explicit Direct Instruction in Programming Education](https://resources.rstudio.com/rstudio-conf-2019/opening-keynote-day2)
 - [Progression at Monzo](https://progression.monzo.com/)
