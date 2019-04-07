@@ -33,7 +33,7 @@ This is a list of some people, books, blogs, videos, podcasts etc that have infl
 - Dave Rogers - [Toxic Technology - The Growing Legacy Threat](https://blog.usejournal.com/toxic-technology-the-growing-legacy-threat-b95ad098a339)
 
 ## Communicating
-*Sharing ideas within teams and across organisational boundaries*
+*Sharing knowledge/ideas within teams and across organisational boundaries*
 
 - Russell Davies, Ella Fitzsimmons, Matthew Sheret and Giles Turnbull - [Doing Presentations](http://www.doingpresentations.com)
 - Giles Turnbull - [What we mean when we say show the thing](https://gdsengagement.blog.gov.uk/2016/11/04/what-we-mean-when-we-say-show-the-thing/)
