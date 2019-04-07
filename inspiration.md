@@ -67,7 +67,7 @@ This is a list of some people, books, blogs, videos, podcasts etc that have infl
 - [Glitch](https://glitch.com/) - remixable applications
 
 ## Algorithms
-*Efficiency and scaling properties*
+*Efficient computation, data structures*
 
 - Tim Roughgarden - [Design and Analysis of Algorithms course](https://www.youtube.com/watch?v=yRM3sc57q0c&list=PLXFMmlk03Dt7Q0xr1PIAriY5623cKiH7V)
 
