@@ -84,7 +84,7 @@ This is a list of some people, books, blogs, videos, podcasts etc that have infl
 *Efficient, fair, open hiring processes*
 
 - Anna Shipman - [How to interview job applicants fairly](https://www.annashipman.co.uk/jfdi/interviewing-fairly.html)
-- Terrence Eden - [The secret rules for getting hired](https://shkspr.mobi/blog/2019/04/the-secret-rules-for-getting-hired/)
+- Terence Eden - [The secret rules for getting hired](https://shkspr.mobi/blog/2019/04/the-secret-rules-for-getting-hired/)
 - The Guardian - [Pairing exercises](https://www.theguardian.com/info/developer-blog/2016/jan/20/the-guardians-new-pairing-exercises)
 
 ## Learning and development
