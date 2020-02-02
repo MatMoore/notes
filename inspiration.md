@@ -25,6 +25,7 @@ This is a list of some people, books, blogs, videos, podcasts etc that have infl
 - Andrew Chen - [Benefit-Driven Metrics: Measure the lives you save, not the life preservers you sell](https://andrewchen.co/benefit-driven-metrics-measure-the-lives-you-save-not-the-life-preservers-you-sell/)
 - Michael Nygard - [Documenting Architecture Decisions](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions)
 - Matt Russell - [How to lead when you have no authority](https://medium.com/swlh/how-to-lead-when-you-have-no-authority-9f22206356d4)
+- [You don't need standup](https://medium.com/@jsonpify/you-dont-need-standup-9a74782517c1)
 
 ## Legacy code
 *Improving software that is hard to change*
