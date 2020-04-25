@@ -90,3 +90,44 @@ a   ;   b   /   cd
  
 ```
 
+## Balanced bracket DPDA
+![PDA](https://learning.oreilly.com/library/view/understanding-computation/9781449330071/httpatomoreillycomsourceoreillyimages1690730.png)
+
+- stack contains a `b` for every nesting level
+- when the stack is empty (parens are balanced), there is a free action to go back to the accept state
+
+This one is deterministic because there is only one rule for every scenario. (Like with DFA)
+
+For PDAs we don't care about specifying all possible states - there is an implicit `stuck` state if no rules apply
+
+In this case it doesn't process `)` or `())`
+
+## Equal numbers of two tokens in a string example
+In this example, the machine is counting the number of each kind of token by putting it on the stack. It ensures that the top token on the stack is always the one that is most prevalent.
+
+This example is equivalent to one where you store one symbol representing the surplus. The stack is just being used as a counter.
+
+## Palindromes example
+String needs to be annotated at the midpoint
+
+```
+Eva, can I see bees in a cave?
+e v a c a n i s e e b M e e s i n a c a v e
+* * * * * * * * * * * - ? ? ? ? ? ? ? ? ? ?
+```
+
+
+## Ruby implementation
+- defines a functional stack (creates copies instead of mutating things in place)
+- like the previous chapter I found the diagrams more intuitive than the code
+
+### What's going on in the different classes
+- A `Configuration` stores state + stack
+- `Rule` defines a transition between two states (implementation detail of the Rulebook)
+- `Rulebook#next_configuration` takes a Configuration and an input character and returns a new Configuration
+- `DPDA` does the computation on an input, keeping track of the current Configuration, using a Rulebook to apply rules and follow free moves
+- `DPDADesign` is a high level api that wraps the DPDA
+
+
+there are a lot of classes working together: Configuration, Rule, Rulebook, Simulation
+
