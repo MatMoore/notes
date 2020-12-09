@@ -94,5 +94,5 @@ This is a list of some people, books, blogs, videos, podcasts etc that have infl
 - Felienne - [Explicit Direct Instruction in Programming Education](https://resources.rstudio.com/rstudio-conf-2019/opening-keynote-day2)
 - [Progression at Monzo](https://progression.monzo.com/)
 - [Patreon Engineering Levels](https://levels.patreon.com/)
-- Thoughtbought - [Upcase](https://thoughtbot.com/upcase)
+- Thoughtbot - [Upcase](https://thoughtbot.com/upcase)
 - Madetech - [Learning resources](https://learn.madetech.com/)
