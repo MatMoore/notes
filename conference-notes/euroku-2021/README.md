@@ -389,7 +389,340 @@ Also, malloc has performance overheads so you want to minimise calls to it. It a
 - Simpler sweeping stage
 - Current implementation does not support compaction, so suffers from memory fragmentation (there is enough memory in total, but there is no contiguous region big enough)
 
-# Another resources discussed in chat
+# Lockdown: the mother of invention - Amy
+
+Ruby is great because you can realise ideas quickly
+
+"I'm going to make this the most productive time"
+
+## Simple to do list app
+
+- Generate a schedule for a day
+
+## On air alert system for boyfriend
+
+- Purchased a smart light with a REST API
+- Created a proof of concept
+- Plan to extend to different meeting platforms
+
+## Solargraph rails
+
+- Looking for contributors
+
+## Remote working tips
+
+82% company leaders plan for remote to continue after the pandemic
+
+Use group chat instead of 1:1 where possible
+
+Virtual meeting that is open all the time for water cooler chat
+
+# The 6 Characters that could bring down your app - Moncef Belyamani
+
+The lightning talk is based on [this blog post](https://www.moncefbelyamani.com/the-6-characters-that-could-bring-down-your-rails-app/).
+
+Look out for `.count.positive?` pr `.count > 0`
+
+Moncef worked on benefits for veterans. The organisation modernised legacy systems from the 80s for tracking claims.
+
+This issue caused a suddent problem they noticed through recurring sentry errors.
+
+`.count` in rails generates `select count(*)` in postgres. This can be slow.
+
+Code wasn't even using the count, just checking non-zero. So it could be replaced with `.any?`.
+
+There are various methods in activerecord like `#any?`, `#exists?`, which can be confusing. There's an article comparing these.
+
+> Sounds like there should be a Rubocop rule to catch .count (much like binding.pry)
+
+# IDE development with ruby - Soutaro Matsumoto
+
+Soutaro is a ruby core committer working on RBS. He developed the Steep type checker.
+
+You can install a VSCode extension to get diagnostics reporting, completion, navigations, hover.
+
+## What is an IDE?
+
+### Examples
+
+- Visual basic in 1995
+- VS Code
+- Eclipse
+- Jetbrains
+- Android Studio
+- Even Vim/Emacs could also be considered IDEs.
+
+### Features
+
+- Syntax highlighting
+- Folding
+- Diagnostic reporting
+- Navigations - jump to definition
+- Completion
+- Refactoring - e.g. extract method, help define new methods
+
+This stuff depends on program analyses, including type checking.
+
+### Program analyses levels
+
+#### Text analyses
+
+input = sequence of characters
+
+#### Syntactic analyses
+
+input = syntax tree of ruby program
+
+#### Semantic analyses
+
+analyze based on everything
+
+The analyzers provide the same set of features regardless of IDE. The language server protocol (LSP) extracts the language specific analyses so it can be reused by IDE frontends.
+
+IDEs communicate with the language server over a protocol that enables inter process communication. There are no assumptions about the server language so we can implement it in ruby.
+
+### Language servers for ruby
+
+- Steep
+- Solargraph
+- Sorbet
+- vscode-ruby has its own language server implemented in typescript
+
+### Designing the language server for Steep
+
+Example of the notifications sent over the LSP:
+
+```
+-> DidChangeTextDocument
+<- PublishDiagnostics
+```
+
+### Responsiveness
+
+Running the type checking on every key hit blocks users interaction. Some tricks to make more responsive:
+
+#### Incremental type checking
+
+- When you change a ruby file it type checks only the file (500ms~1s)
+- When you change RBS files, it runs full type checking (could take minutes)
+
+#### Prioritising open files
+
+Open files have priority in the type checking queue, for faster feedback.
+
+#### Dropping code
+
+Completion needs more responsiveness (< 300ms)), so in this case unrelated methods are dropped.
+
+# Streaming data transformations with ruby
+
+Implemented piperator gem.
+
+Each step in pipeline is a lambda function that returns an enumerable
+
+THe most useful thing in this gem is a `Piperator::IO` class, which is like StringIO -> converts an enumerator to IO.
+
+Since ruby 2.7 you can use the function composition operator `>>` to accomplish the same thing.
+
+# Delivering fast and slow - Ethics of quality - Lena Wiberg
+
+The core message of this talk is to take responsibility for your actions and call out other people's bad decisions. Don't blame others.
+
+Big disasters happen because of many small risk assessments and decisions.
+
+## Boeing 737 Max 8s
+
+- Software to compensate for moving the engines etc
+- Rushed
+- Skipped pilot training
+- 300+ people dead
+
+## Airbus
+
+"turn the airplane off and again"
+
+## Mars climate orbiter
+
+- Mixed metric and imperial measurements
+- $550M dollars lost in space
+
+## Orebro University hospital
+
+- Swedish hospital
+- Software couldn't handle swedish characters
+
+## How to behave ethically
+
+### Understand your basic professional obligation (depending on role you are hired to do)
+
+- Tester - discover information and pass it on
+- Developer - develop safe, fast, well architected software
+
+### Know your legal and contractual obligations. What are you expected to follow? (E.g. GDPR)
+
+You need to know when you are implementing something that is not legal.
+
+### Know your own ethical bottom line
+
+What lies are you not willing to tell? Will you hide a potential bug if its not probably or you think noone would ever use that? What's the worst thing that could happen to you or someone else?
+
+Whose interest are you serving?
+
+If you are building a voting system, you are serving the voters and government, not the company that makes money.
+
+### Know the harm your software could do, maintain critical awareness of your whole work situation
+
+Today we use lots of components and algorithms we don't understand. We collect a huge amount of data.
+
+What is the company prepared to do? E.g. volkswagen were prepared to hide CO2 emissions.
+
+Need to be aware of biases, e.g. data bias
+
+You can have "evil personas" and think about use cases related to those.
+
+See also: [Assume worst intent (designing against the abusive ex)](https://alexwlchan.net/2018/09/assume-worst-intent/)
+
+### Need to be good at saying no and speaking truth to power
+
+Know your escalation path (e.g. managers manager, board room, newspaper)
+
+Know your own tolerance for personal and career risk. If you are not willing to lose your job to make sure an airplane doesn't crash, you shouldn't be building airplanes.
+
+> @Ramon: One way to say "no" is to say "yes, and", and I think that is a skill everyone should learn. You accept what is being asked of you and tell them what that means with respect to other constraints, and ask questions. For example, "yes, i can start working on this other project, and that means the current project will not be shipped and 6 months of work will be wasted. do you really want me to work on the new one? is it that urgent? can it not wait a month?"
+
+## Being pushed to deliver more, faster, cheaper
+
+- System 1 - fast unconcious thinking
+- System 2 - slow concious thinking
+
+System 1 likes assumptions, familiarity. It's not good for innovation.
+
+## Cross functional teams
+
+Cross function teams yes - cross functional individuals no
+
+Like using a swiss army knife to build a house
+
+> One thing we try to do is try to give newer developer ownership of one part of our software base as fast as possible so that they can pretty quickly feel legitimate in discussion of all level on their part of the product, and then we expand on that
+
+# Shipping ruby and rails app as native Linux packages - Cyril Rohr
+
+System packages are easy to distribute/install and can auto-upgrade without much fuss.
+
+They may be the only option for large enterprises.
+
+Published `pkgr` tool. Uses heroku buildpack and then outputs a deb or rpm package.
+
+Automatically includes a configuration tool for setting environment variables, scaling processes you have declared in a procfile.
+
+# Building a ruby web app using the ruby standard library - Maple Ong
+
+- https://twitter.com/OngMaple
+
+See also: [Peeling away the layers](https://peelingawaythelayers.net/)
+
+## Networking
+
+### `TCPServer` example
+
+- Accept connections
+- Echo messages
+- Test with `nc localhost 9999`
+
+### HTTP message anatomy
+
+- Start line (request line or status line)
+- Header fields
+- Blank line
+- Message body
+
+### Accepting HTTP request example
+
+- Parse request line
+- Format HTTP response
+
+### Handling form data
+
+- Status code 303 See Other
+- Parse headers into a hash
+- Use Content-Length to know when the body ends
+- Use `#decode_wwww_form` to decode form encoding
+
+### Persisting the data
+
+- `YAML::Store`
+
+### What's next
+
+- Make it a rack application
+- Once its a rack application, you can hand off the HTTP logic to webservers
+- Use a database
+
+# Why a diverse team is crucial to startup success - Melissa Jurkoic
+
+Diversity can be across many attributes - you need to define it in your context.
+
+Start by diversifying leadership. They are the first faces people see. Influences the stategy and the market you're trying to attrack. Big problem of not providing pathways for leadership.
+
+Language use is coded and can be encouraging or offputting. See http://gender-decoder.katmatfield.com/
+
+We want to be able to see ourselves doing the job.
+
+> Their results showed that women felt that job adverts with masculine-coded language were less appealing and that they belonged less in those occupations. For men, feminine-coded adverts were only slightly less appealing and there was no effect on how much the men felt they belonged in those roles.
+
+Bringing diverse groups together can create conflict. But out of conflict comes great innovation.
+
+Link from chat: https://geekfeminism.wikia.org/wiki/Category:Incidents
+
+# Keynote - Linda Liukas
+
+What even is a computer?
+
+They are increasingly opaque.
+
+Everything is input -> process -> output
+
+We need more metaphors!
+
+## Coding can be like cookiing
+
+- Input -> Ingredients
+- Algorithm -> Recipe
+- Evaluating code -> Processing/cooking steps
+
+Not all things can be easilly formulated as input -> process -> output model e.g. teaching a child.
+
+## Should the technology grow or the person using it?
+
+People writing code should
+
+1. Write algorithms
+2. Not too much
+3. Mostly understandable ones
+
+## Thinking about coding in different ways
+
+Recipes and algorithms teach how, not why.
+
+There's a disconnection between production and consumption of code has deepened.
+
+Don't want everything to be plastic wrapped, processed code from big faceless tech companies
+
+Want people to know the history - how did these people see the world?
+
+Tech culture seems like a meme-ified smart snappy thing; it should be more like home cooking. Connect to ourselves and nature.
+
+Developers are very focused on learning specific skills, whereas teaching kids is more about teaching curiousity and fearlessness.
+
+Nowadays we have quite dystopian visions of the future. In 1960s had a lot of excitement about technology. We should imagine utopias. We're not at the height of technology right now.
+
+## Unconventional computing
+
+- https://www.amazon.com/Thoughts-unconventional-computing-Andrew-Adamatzky/dp/1905986122/ref=sr_1_2?dchild=1&keywords=andrew+adamatzky&qid=1622296053&s=books&sr=1-2
+- https://royalsocietypublishing.org/doi/10.1098/rsfs.2018.0029
+- https://en.wikipedia.org/wiki/Plant_to_plant_communication_via_mycorrhizal_networks
+
+# Other resources discussed in chat
 
 ## Conferences
 
@@ -399,6 +732,7 @@ Also, malloc has performance overheads so you want to minimise calls to it. It a
 
 - [Color blindness simulator](https://michelf.ca/projects/sim-daltonism/)
 - [Packwerk](https://github.com/Shopify/packwerk)
+- [Git aliae](https://github.com/ConradIrwin/git-aliae/)
 
 ## Frameworks
 
@@ -413,15 +747,20 @@ Also, malloc has performance overheads so you want to minimise calls to it. It a
 - [The Modular Monolith: Rails Architecture](https://medium.com/@dan_manges/the-modular-monolith-rails-architecture-fb1023826fc4)
 - [Taming large rails applications with private ActiveRecord models](https://kellysutton.com/2019/10/29/taming-large-rails-codebases-with-private-activerecord-models.html)
 - [Under deconstruction: the state of shopify's monolith](https://shopify.engineering/shopify-monolith)
+- [Make rubocop 20x faster in 5 min](https://dev.to/doctolib/make-rubocop-20x-faster-in-5-min-4pjo) (for format on save)
 
 ## Books
 
 - [Painless Rails without Overengineeriug](https://painlessrails.com/)
 - [Growing rails applications in practice](https://pragprog.com/titles/d-kegrap/growing-rails-applications-in-practice/)
 - [Sustainable web development with Ruby on Rails](https://sustainable-rails.com/)
+- [Software people ... work from home](https://leanpub.com/softwarepeopleworkfromhome)
+- [Gradual modularization for Ruby and Rails](https://leanpub.com/package-based-rails-applications)
+- [Migrating to microservices](https://link.springer.com/chapter/10.1007/978-3-030-31646-4_3)
 
 ## Talks
 
 - [Adopting Sorbet at Scale](https://www.youtube.com/watch?v=v9oYeSZGkUw)
 - [Between monoliths and microservices](https://noti.st/palkan/VWPOSd/between-monoliths-and-microservices)
 - [Counterintuitive Rails pt 1](https://www.youtube.com/watch?v=KtD32fO_owU)
+- [the Taming monoliths without microservices](https://www.youtube.com/watch?v=-ovkkvvTiRM&list=PL9_jjLrTYxc3dTbvb8fIuzDFGTCaEdO3a&index=8)
