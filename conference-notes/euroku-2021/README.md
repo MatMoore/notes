@@ -1,6 +1,8 @@
 # Euroku 2021
 
-# Keynote - Matz
+[Conference playlist](https://www.youtube.com/channel/UCgXsZr2e0AgUJMZm5t03WVw)
+
+# Keynote: Beyond Ruby3.0 (Yukihiro Matsumoto)
 
 Matz talked about the changes in ruby 3.0 and whats next after that.
 
@@ -46,7 +48,11 @@ The focus for 3.1 is stability - not much language enhancements, but improve rac
 
 Matz has lots of "silly ideas" for the future. He mentioned that he would like to fix packaging to be more like python/java. I.e. isolate constant/variable namespaces and explicitly import the names you want.
 
-# Accessibilty - Eeva
+# Don't Develop Just for Yourself - A Developer's Checklist to Accessibility (Eeva-Jonna Panula)
+
+> Developer, are you (unconsciously) developing sites for users just like yourself? It often means a sighted mouse user with good fine motor skills and who is proficient with computers. But not every user is like that.
+>
+> Many projects have automated accessibility checkers, and that is a good start. However, they don’t catch most of the failures on accessibility. There are some fairly simple checks to ensure a better experience for your users, and from this talk, you’ll learn how to do them and, most importantly, why they are essential to do.
 
 - [eevis.codes](https://eevis.codes/)
 - [@eevispanula on twitter](https://twitter.com/eevispanula?lang=en)
@@ -68,7 +74,14 @@ There was a discussion in chat about how to get a budget for a11y teams.
 
 > "every time an issue comes up that can be solved following an accessibility guideline (WCAG), mention it."
 
-# PDF lightning talk
+# Lightning talk: State of the PDF (Thomas Leitner)
+> What are your options when dealing with PDFs in Ruby? Are you creating PDFs? Then you are likely using wkhtmltopdf or Prawn.
+> 
+> What if you need to manipulate PDF files? Are you resorting to calling command line tools like pdftk? Or chaining multiple libraries/CLI tools together?
+>
+> Have you tried HexaPDF? It is a relatively new PDF library for Ruby which unites all PDF manipulation and creation facilities under one pure-Ruby roof. It is fast with low memory usage and a very Ruby-esque API interface.
+>
+> The lightning talk will give a short introduction into the available libraries and then focus on the current state of HexaPDF and what it brings to the table.
 
 Prawn is the go to library in ruby. It's actively developed and has lots of extension gems.
 
@@ -77,7 +90,8 @@ Hexapdf is intended to be full fledged implementation of the spec.
 - Fast and memory efficient
 - High and low level interface
 
-# How to stop breaking other people's things - Lisa Karlin Curtis
+# How to stop breaking other people's things (Lisa Karlin Curtis)
+> Breaking changes are sad. We’ve all been there; someone else changes their API in a way you weren’t expecting, and now you have a live-ops incident you need to fix urgently to get your software working again. Of course, many of us are on the other side too: we build APIs that other people’s software relies on.
 
 It's easy to break other peoples stuff.
 
@@ -208,7 +222,10 @@ Your deprecation policy should trades off the cost to the integrators to change 
 You should have a hard line; set an arbitrary day for deprecating stuff. "Unless the world is on fire this will go away"
 You need to establish a culture where, specific teams do not have the power to stop things progressing just because they're busy.
 
-# GraphQL performance - Dmitry
+# Building high–performance GraphQL APIs (Dmitry Tsepelev)
+> One day you decided to give GraphQL a try and implement an API of your new application using GraphQL. You deployed the app to production, but after a while, you realized, that responses are not super fast. How to find out what makes your GraphQL endpoint slow?
+>
+> We’ll discuss how queries are executed and what makes processing slower. After that, we’ll learn how to measure performance in the GraphQL era and determine the part we should improve. Finally, we’ll discuss possible solutions and some advanced technics to keep your GraphQL app fast!
 
 Recommendation: Production Ready GraphQL book. Some of the techniques from the book were covered in this talk.
 
@@ -261,7 +278,8 @@ Queries can share some fragments, so you can cache parts of responses identified
 - up to date documentation out of the box - you have to define the schema
 - frontend developers can write any query they want
 
-# Adding byebug to the Professional Puts Debugger Tool Set by Zhi Ren Guoy
+# Lightning talk: Adding byebug to the Professional Puts Debugger Tool Set (Zhi Ren Guoy)
+> A crash course on getting started with the ‘byebug’ debugger.
 
 You can run `byebug demo.rb` without modifying the code
 
@@ -297,9 +315,9 @@ gem pristine foo
 
 Since rails 6, you can enable "stict loading" to warn about N+1 queries: https://github.com/rails/rails/pull/39491
 
-# Going native with FFI - Juan Carlos Ruiz
+# Going native with FFI (Juan Carlos Ruiz)
+> Ruby is a flexible language that allows us to write expressive and maintainable code. However, sometimes it could be necessary to work with a low-level language, looking for better performance. In this talk, I’m going to show you how to use Ruby to create an interface for compiled languages like C.
 
-This talk covered two options for writing native code extensions.
 
 ## MKMF
 
@@ -323,9 +341,10 @@ FFI extension is multi platform and multi-implementation.
 > if you're using ffi in your gem should you bundle the sourve library in them gem?
 > that maybe hard on what \*nix-ld system it should be used to prebundle compiled so's
 
-# Optimizing Ruby's memory layout (Matt and Peter)
-
-This talk covered a new approach for memory management/garbage collection in ruby.
+# Optimizing Ruby's memory layout (Peter Zhu & Matthew Valentine-House)
+> Ruby’s current memory layout does not optimize for cache performance, and this has implications: object data like string and array contents are often not stored close to the objects that use them, causing poor data locality, reducing the efficiency of CPU caches, and making it more complex for the garbage collector to manage these objects. Additionally, objects can also contain pointers to data that then point back into the Ruby heap, slowing down object access due to pointer indirection.
+>
+> Join us as we explore how the variable width allocation project will change the garbage collector heap to replace the system’s malloc heap, giving us finer control of the memory layout to optimize for performance.
 
 This was quite in depth and I think I will need to watch it again to understand the whole thing. People in the chat recommended the "Ruby under a microscope" book for learning ruby internals, and compared it to what Project Valhalla targets to do in for java. [The Garbage Collection Handbook](https://gchandbook.org/) also covers the techniques ruby uses.
 
@@ -389,7 +408,13 @@ Also, malloc has performance overheads so you want to minimise calls to it. It a
 - Simpler sweeping stage
 - Current implementation does not support compaction, so suffers from memory fragmentation (there is enough memory in total, but there is no contiguous region big enough)
 
-# Lockdown: the mother of invention - Amy
+# Lockdown: The Mother of Invention (Amy Wall)
+
+> The last year has been hard on all of us. Cutting through the bad news and the mundanity has required resilience, creativity, and determination. Thankfully, we have had a secret weapon on our side to keep us occupied: Ruby.
+>
+> Join me as I explore some of the good, the bad, and the just plain hilarious ideas Rubyists have been working on during lockdown. I will survey Ruby lovers of all levels to see what has been holding their attention during this difficult year.
+>
+> I will also share my own experience with staying busy, including my adventure building an “On Air” alert system for Zoom in my home office space using Ruby.
 
 Ruby is great because you can realise ideas quickly
 
@@ -417,7 +442,10 @@ Use group chat instead of 1:1 where possible
 
 Virtual meeting that is open all the time for water cooler chat
 
-# The 6 Characters that could bring down your app - Moncef Belyamani
+# Lightning talk: The 6 Characters That Could Bring Down Your App (Moncef Belyamani)
+> This is a true story about how using the wrong method caused the app to hang for our users, and how it increased our database CPU usage by up to 10 times!
+>
+> You probably are using this same method in your app right now. Find out what you should use instead.
 
 The lightning talk is based on [this blog post](https://www.moncefbelyamani.com/the-6-characters-that-could-bring-down-your-rails-app/).
 
@@ -435,7 +463,12 @@ There are various methods in activerecord like `#any?`, `#exists?`, which can be
 
 > Sounds like there should be a Rubocop rule to catch .count (much like binding.pry)
 
-# IDE development with ruby - Soutaro Matsumoto
+# IDE development with Ruby (Soutaro Matsumoto)
+> Integrated development environment (IDE) is one of the most frequently used tools for programming. It’s a kind of text editor where you type and read the code, but it does more for you. On-the-fly error reporting, completion, go-to-definition, and more. These features help you writing and reading the code and make the tools more valuable than simple text editors.
+>
+> I have been working for IDE development to support Ruby programming with a static type checker. It is based on the Language Server Protocol (LSP) and implemented in Ruby.
+>
+> I want to share my experience. What is the protocol? How can the LSP features be implemented? You will get to know the under-the-hood of IDEs, and the tools will become more familiar to you.
 
 Soutaro is a ruby core committer working on RBS. He developed the Steep type checker.
 
@@ -514,7 +547,7 @@ Open files have priority in the type checking queue, for faster feedback.
 
 Completion needs more responsiveness (< 300ms)), so in this case unrelated methods are dropped.
 
-# Streaming data transformations with ruby
+# Streaming data transformations with Ruby (sponsored) (Ville Lautanala, Smartly)
 
 Implemented piperator gem.
 
@@ -524,7 +557,10 @@ THe most useful thing in this gem is a `Piperator::IO` class, which is like Stri
 
 Since ruby 2.7 you can use the function composition operator `>>` to accomplish the same thing.
 
-# Delivering fast and slow - Ethics of quality - Lena Wiberg
+# Delivering fast and slow - Ethics of quality (Lena Wiberg)
+> Daily, we are pushing the boundaries of how fast we can deliver software. Constantly running on a knife’s edge between great success and horrible failure.
+>
+> Delivering something new, better, faster than our competition can mean incredible payoff and we are constantly being asked to cut costs and deliver more, faster, cheaper. But then suddenly, you fall off the other side of the edge and wake up to 189 dead in a plane crash or having to take down and redesign your entire banking service because the architecture didn’t hold up to the load. It probably wasn’t your decision to push that to production but one can imagine that a long chain of people have to have made a number of small (or huge) decisions that led up to that result.
 
 The core message of this talk is to take responsibility for your actions and call out other people's bad decisions. Don't blame others.
 
@@ -605,7 +641,12 @@ Like using a swiss army knife to build a house
 
 > One thing we try to do is try to give newer developer ownership of one part of our software base as fast as possible so that they can pretty quickly feel legitimate in discussion of all level on their part of the product, and then we expand on that
 
-# Shipping ruby and rails app as native Linux packages - Cyril Rohr
+# Lightning talk: Shipping Ruby and Rails apps as native Linux packages (Cyril Rohr)
+> Ruby and Rails applications are notoriously difficult to package in the native formats (.deb, .rpm) used by the main Linux distributions.
+>
+> Although Docker has allowed to ship applications almost anywhere, native packages remain relevant in constrained environments (banks, etc.), or when distributing an app or CLI to end users that may not have or want to use Docker.
+>
+> In this presentation you’ll learn how to package a Rails application for the main Linux distributions available. You’ll also learn how to host the resulting packages, and apply the same recipe to package a Ruby CLI that can be shipped to users.
 
 System packages are easy to distribute/install and can auto-upgrade without much fuss.
 
@@ -615,7 +656,8 @@ Published `pkgr` tool. Uses heroku buildpack and then outputs a deb or rpm packa
 
 Automatically includes a configuration tool for setting environment variables, scaling processes you have declared in a procfile.
 
-# Building a ruby web app using the ruby standard library - Maple Ong
+# Building a Ruby web app using the Ruby Standard Library (Maple Ong)
+> Do you want to understand how a web application works without Rails magic? Let’s go back to the basics of a web application and build one from the ground up using Ruby Standard Library. After this session, you’ll appreciate Rails that much more.
 
 - https://twitter.com/OngMaple
 
@@ -658,7 +700,10 @@ See also: [Peeling away the layers](https://peelingawaythelayers.net/)
 - Once its a rack application, you can hand off the HTTP logic to webservers
 - Use a database
 
-# Why a diverse team is crucial to startup success - Melissa Jurkoic
+# Why a Diverse Team is Crucial to Startup Success (Melissa Jurkoic)
+> Team diversity refers to differences between members of startup team. Those differences can include demographic differences (like age, race, sex, ethnicity), personality (extrovert, introvert, and differing Myers-Briggs types) and functional (as in skill sets, like engineering, design, copywriting, and marketing).
+>
+> How does team diversity impact your customers’ experience from the moment they learn about you through their journey with you? You will attract and relate to customers how look like you. They will understand your messaging and you will understand their needs. If you don’t represent the right dimensions of diversity, you are leaving an amazing experience behind.
 
 Diversity can be across many attributes - you need to define it in your context.
 
@@ -674,7 +719,12 @@ Bringing diverse groups together can create conflict. But out of conflict comes 
 
 Link from chat: https://geekfeminism.wikia.org/wiki/Category:Incidents
 
-# Keynote - Linda Liukas
+# Keynote (Linda Liukas)
+> Food for thought: home-cooked software
+>
+> A palate is a spot on your tongue where you remember. A library of textures, taste and language to describe the world around us. What if we learned about computers, code and technology with the tip of our tongue? How might home-cooked software look like in the future?
+>
+> In this talk, children’s book author & illustrator Linda Liukas will stem, rind, pit and seed a piece of code. Through the process, she will develop a palate for code, and understanding of how we are entangled in our technology, natural world and human communities.
 
 What even is a computer?
 
