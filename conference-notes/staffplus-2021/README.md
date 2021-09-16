@@ -19,7 +19,9 @@ The "I" in IC seems to be getting less relevant these days.
 Your "domain" or scope of responsibility naturally increases as you move into more senior positions. You also need to be more aware of the larger business context your area of responsibility sits within.
 This can be hard if your organisation is bad at communicating and you have people filtering that information from you. A staffplus role should expose you to the problems of the business.
 
-## Skills and behaviours
+Silvia Botros said that "my job is to help the company go in a stategic direction" where there is a multi-year strategy. Resolves misalignment problems by escalating them.
+
+### Skills and behaviours
 Senior roles can be seen as a balance of 4 jobs:
 
 1. A core technical skill you specialise in (for me, software engineering)
@@ -32,7 +34,7 @@ You will be a co-leader with other people with a different balance of these skil
 You will have some degree of competence in all of them but will play to your strengths and lean on other people to fill in the gaps. Lots of talk in slack about T shaped skills and "Broken Comb" shapes.
 
 
-## Contrast with Hyperspecialist
+### Contrast with Hyperspecialist
 Staffplus is not a hyperspecialist. It's more of a senior generalist role.
 
 Anecodotally hyperspecialist is still a possible career path but it seems to be less in demand these days.
@@ -50,3 +52,34 @@ If you specialise in multiple technical skills you can act as a bridge between r
 - Lots of time is spent on the design of techno-social systems (or whatever the word is)
 - Lots more delegating
 - Your influence tends to be sideways rather than up and down
+
+
+## How to influence (without authority)
+- Keep asking questions
+- Talk about unsaid parts of decision making - decisions can be biased by organisational incentives
+- Senior sponsors can get you a seat at the table, but you still have to do the work
+- If you reach a different decision, you could have different information or different values. Start by checking you have the same information.
+- Long form writing is a superpower. You can look inwards at what can be done better.
+- Find out who cares about what.
+- The goal is to be neutral. Diane Tang (distinguished engineer) spends much of her time with teams that don't report to her. She is user focused and can recommend solutions and shape conversations.
+
+## Widening your influence
+- Your role may be clear within a team but unclear outside of it. You need to broadcast that information out
+- When you are setting your own goals, you can disseminate that to people you intend to work with and explain how you can work together
+
+## Global vs local optimisation
+- When setting standards/processes you can think of it like a distributed system - there are a range of approaches that trade off a consistent experience and the ability to work in parallel
+- Where you fall depends on organisation size
+
+## Persuasion and information gathering
+- Turn statements into questions
+- Talk less, listen more
+- Explicitly ask "what do you care about" "what top of mind" "what keeps you up at night"
+- Make it data-driven
+- Provide summarised information
+
+## Technical writing
+- Undervalued becaused the feedback loop is slower than writing code but *WRITING IS THINKING*
+- Record constraints and options not picked
+- Define a clear audience
+- Pin docs in slack for common questions - this frees up your time for higher leverage stuff
