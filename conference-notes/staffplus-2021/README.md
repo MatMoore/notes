@@ -83,3 +83,18 @@ If you specialise in multiple technical skills you can act as a bridge between r
 - Record constraints and options not picked
 - Define a clear audience
 - Pin docs in slack for common questions - this frees up your time for higher leverage stuff
+
+## Calling out the current situation
+- "we don't know - let's figure it out"
+- "the way x+y is working together means we can't move forward"
+- "this solution doesn't meet this requirement - how do we address that?"
+
+## Developer experience = productivity
+- Observability
+- Reliability
+- Making sure documentation is up to date
+- Make sure technical debt is paid down
+
+## Leadership
+- Anarchists Guide book
+- Team Topologies - good for delivering a complicated project
