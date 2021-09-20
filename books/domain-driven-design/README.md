@@ -34,4 +34,4 @@ A change to the ubiquitous language is a change to the model. "Find easier ways 
 - "Business activities and rules are as central to a domain as are the entities involved" (p17, p18 overbooking policy example)
 - "If sophisticated domain experts don't understand the model, there's something wrong with the model" (p33)
 - You can used informal UML diagrams to anchor a discussion, but don't try and include everything. "Sketch a diagram of three to five objects central to the issue at hand" "Comprehensive diagrams of the entire object model overwhelm the reader" (p36)
-- Diagrams in a design document can be hand drawn - they should feel casual and temporary
+- Diagrams in a design document can be hand drawn - they should feel casual and temporary (p39)
