@@ -98,3 +98,66 @@ If you specialise in multiple technical skills you can act as a bridge between r
 ## Leadership
 - Anarchists Guide book
 - Team Topologies - good for delivering a complicated project
+
+## How Google Meet coped with COVID demand
+They had 3 objectives
+
+1. Avoid outages (and failing that, degrade gracefully)
+2. Increase serving capacity
+3. Forecast demand
+
+This talk was interesting because they described an incident response where
+- the incident was ongoing rather than returning to normal within a day
+- they pre-emptively declared an incident rather than waiting for things to break
+- people were not expected to be 100% available
+
+They set up standby roles for all executive roles in the incident response, who shadowed all meetings and were ready to jump in at any point. Some people in the chat questioned the cost of this, but it reminded me of job sharing arrangements, which seem more resiliant than depending on a single person.
+
+They set up very structured workstreams for the duration of the incident so that different workstreams could continue in parallel.
+
+- Dependency issues
+- Bottlenecks
+- Control knobs to ease capacity (e.g. degrading video quality, switching off captions)
+- Productionising (automating ad-hoc solutions)
+
+This sounded like it would reduce the pressure of trying to balance multiple things at once. The dependency stream can focus on building relationships with other teams and influencing their work. Bottlenecks stream can focus on investigation. Control knobs stream can focus on quick implementation. Productionising stream can think about efficiency and reliability without having to rush to get *something* live.
+
+The workstreams approach reminded me a bit of how we approached ExpertTrack when we were under tight deadlines. Except that in this case they acknowledged it as an incident rather than business as usual.
+
+Things that helped structure the work:
+- Agreeing shared terminology
+- Setting up google groups for each workstream
+
+## Technical strategy power chords
+### Pick only one goal
+e.g. lower error rates to < 1%, run migrations through an automatic pipeline, increase throughput of X to Y%
+
+You want to avoid tension between goals and allow simple solutions to be found. You can't do this if you have multiple goals that can conflict
+
+**The approach can be multifaceted but the outcome should be simple**
+
+### List the facts that would change your mind
+i.e. the key underpinning assumptions
+
+### Solve only the hard problem you absolutely need to
+
+### Work backwards
+Strategy is not just a start/end state - it has to be executable like a recipe.
+
+Don't overspecify the end state, because your context will change
+
+### Killing it with fire
+This is a high consequence decision that can affect teams for years and has ripple effects throughout the organisation
+
+There are many options
+
+- Turndown
+- Migration
+- Modernisation
+- Live with it
+
+You also need to consider external dependencies beyond the owning team
+
+When considering migrations you might need prototyping or additional staffing during the migration period.
+
+You should articulate your principles that should guide the migration e.g. risk appetite (users should not be impacted)
