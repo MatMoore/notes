@@ -22,6 +22,10 @@ Use
 
 A change to the ubiquitous language is a change to the model. "Find easier ways to say what you need to say, and then take those new ideas back down the diagrams and code"
 
+### Relation to design documents
+- The ubiquitous language should lead to documents becoming more concise and less ambiguous
+- If the ubiquitous language is evolving but not being reflected in the document, it's probably not important enough to update. Archive the document to avoid confusion
+- If terms used in the document don't become part of the ubiquitous language, people are either not reading it or not finding it compelling
 
 ## Ideas
 
@@ -30,3 +34,4 @@ A change to the ubiquitous language is a change to the model. "Find easier ways 
 - "Business activities and rules are as central to a domain as are the entities involved" (p17, p18 overbooking policy example)
 - "If sophisticated domain experts don't understand the model, there's something wrong with the model" (p33)
 - You can used informal UML diagrams to anchor a discussion, but don't try and include everything. "Sketch a diagram of three to five objects central to the issue at hand" "Comprehensive diagrams of the entire object model overwhelm the reader" (p36)
+- Diagrams in a design document can be hand drawn - they should feel casual and temporary
