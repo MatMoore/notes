@@ -22,9 +22,11 @@ Use
 
 A change to the ubiquitous language is a change to the model. "Find easier ways to say what you need to say, and then take those new ideas back down the diagrams and code"
 
+
 ## Ideas
 
 - "Binding the model and the implementation" - Prototyping with just a test framework and no UI enables interactive discussion with domain experts about the model and its consequences (p11)
 - "knowledge crunching is not a solitary activity" - raw material comes from domain experts, users of existing systems, prior experience of tech team. Without collaboration with domain experts, the knowledge built up is shallow, and the software is disconnected from their way of thinking.
 - "Business activities and rules are as central to a domain as are the entities involved" (p17, p18 overbooking policy example)
 - "If sophisticated domain experts don't understand the model, there's something wrong with the model" (p33)
+- You can used informal UML diagrams to anchor a discussion, but don't try and include everything. "Sketch a diagram of three to five objects central to the issue at hand" "Comprehensive diagrams of the entire object model overwhelm the reader" (p36)
