@@ -1,7 +1,7 @@
 # LeadDev/StaffPlus 2021
 This conference took place on the 14th September 2021.
 
-This was the first time Leaddev did a staffplus track. There were 3 tracks but I only followed the StaffPlus one as it seemed more interesting to me.
+This was the first time Leaddev did a StaffPlus track. There were 3 tracks but I only followed the StaffPlus one as it seemed more interesting to me.
 
 All videos are available from [leaddev.com](https://leaddev.com/course/leaddev-live?vgo_ee=L1TlqoRqLUNMkRHKcvr6yLyTHSQN%2BDtnb0JgEo8gVWY%3D).
 
@@ -16,7 +16,7 @@ Many of the speakers were from quite large engineering organisations.
 
 ### Adding perspective
 One of the speakers said the way you can leverage experience as a staff engineer is by bringing hard-earned knowledge of *safety engineering* to teams that are only thinking about *product engineering*.
-Safety engineering becomes more important in larger organisations where people are less willing to take big risks. Basically you are "adult supervision" for people who get excited about stuff. You think about thinks might fail.
+Safety engineering becomes more important in larger organisations where people are less willing to take big risks. Basically you are "adult supervision" for people who get excited about stuff. You think about how things might fail.
 
 Yonatan Zunger shared his article [Privacy, Triage, and Risk](https://www.usenix.org/conference/pepr19/presentation/zunger).
 
