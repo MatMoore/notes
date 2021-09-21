@@ -1,4 +1,4 @@
-# Leaddev/StaffPlus 2021
+# LeadDev/StaffPlus 2021
 This conference took place on the 14th September 2021.
 
 This was the first time Leaddev did a staffplus track. There were 3 tracks but I only followed the StaffPlus one as it seemed more interesting to me.
