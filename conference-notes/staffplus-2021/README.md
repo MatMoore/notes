@@ -91,7 +91,7 @@ StaffPlus responsibilities should replace more hands on stuff; don't just try an
 You can set your own goals and share them with the people you work with. Include how you will work with teams, how you plan to deliver on your goals, what it means in practice. [Sabrina Leandro breaks down her quarterly goals into 6 week milestones, and then sets weekly plans.](https://leaddev.com/leaddev-live/so-youre-staff-now-what)
 
 Other examples of personal planning:
-- [My yearly reflection and planning](https://www.daviddaly.me/2020/01/my-yearly-reflection-and-planning.html)
+- [David Daly's yearly reflection and planning](https://www.daviddaly.me/2020/01/my-yearly-reflection-and-planning.html)
 
 ### Similarities to roles I have done in the past
 - The focus on mentoring and building capability in the organisation is very similar to my experience as a senior engineer and TL, especially when I was in the civil service
