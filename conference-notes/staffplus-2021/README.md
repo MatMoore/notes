@@ -1,10 +1,13 @@
-# Leaddev/Staffplus 2021
+# Leaddev/StaffPlus 2021
+This conference took place on the 14th September 2021.
 
-This was the first time Leaddev did a staffplus track. There were 3 tracks but I only followed the Staffplus one as it seemed more interesting to me.
+This was the first time Leaddev did a staffplus track. There were 3 tracks but I only followed the StaffPlus one as it seemed more interesting to me.
 
-## What is a Staffplus role?
+All videos are available from [leaddev.com](https://leaddev.com/course/leaddev-live?vgo_ee=L1TlqoRqLUNMkRHKcvr6yLyTHSQN%2BDtnb0JgEo8gVWY%3D).
 
-I went in not really understanding these roles very well. Staffplus describes the senior end of the "individual contributor path" after senior engineer, which includes titles like Staff Engineer, Senior Staff Engineer, Principal Staff Engineer, Distinguished Engineer.
+## What is a StaffPlus role?
+
+I went in not really understanding these roles very well. StaffPlus describes the senior end of the "individual contributor path" after senior engineer, which includes titles like Staff Engineer, Senior Staff Engineer, Principal Staff Engineer, Distinguished Engineer.
 
 [StaffEng](https://staffeng.com/) is a good starting point.
 
@@ -22,7 +25,7 @@ Life experience can also be valuable for empathising with how your software impa
 ### Systems thinking
 The "I" in IC seems to be getting less relevant these days and the speakers empahsised systems thinking. "IC is a decomplexifier" "cut through the organisational cruft" "debug the organisation"
 
-In a Staff+ role you can have a big impact by reducing [toil](https://sre.google/sre-book/eliminating-toil/). There was some discussion about "developer experience" becoming more of a thing. Somebody shared [The Show Must Go On: Securing Netflix Studios At Scale](https://netflixtechblog.com/the-show-must-go-on-securing-netflix-studios-at-scale-19b801c86479) which talks about building internal capability through engineering.
+In a StaffPlus role you can have a big impact by reducing [toil](https://sre.google/sre-book/eliminating-toil/). There was some discussion about "developer experience" becoming more of a thing. Somebody shared [The Show Must Go On: Securing Netflix Studios At Scale](https://netflixtechblog.com/the-show-must-go-on-securing-netflix-studios-at-scale-19b801c86479) which talks about building internal capability through engineering.
 
 ### Scope
 Your "domain" or scope of responsibility naturally increases as you move into more senior positions. You also need to be more aware of the larger business context your area of responsibility sits within.
@@ -30,7 +33,7 @@ This can be hard if your organisation is bad at communicating and you have peopl
 
 ## Skills and behaviours
 ### Develop a skillset beyond the technical skills
-Senior roles can be seen as a balance of 4 jobs:
+In [Role and Influence: The IC trajectory beyond Staff](https://leaddev.com/leaddev-live/role-and-influence-ic-trajectory-beyond-staff), Yonatan Zunger described senior roles as a balance of 4 jobs:
 
 1. A core technical skill you specialise in (for me, software engineering)
 2. Product management (see [Product owner onboarding checklist](https://unremarkabletester.com/2021/05/05/my-product-owner-onboarding-checklist/))
@@ -67,9 +70,9 @@ Some recommended resources:
 - [SRE Apprentives](https://www.infoq.com/podcasts/sre-apprentices/)
 
 ### Contrast with Hyperspecialist
-Staffplus is not a hyperspecialist. It's more of a senior generalist role.
+A StaffPlus role is not a hyperspecialist. It's more of a senior generalist role.
 
-Anecodotally hyperspecialist is still a possible career path but it seems to be less in demand these days.
+Anecodotally, hyperspecialist is still a possible career path but it seems to be less in demand these days.
 
 If you specialise in multiple technical skills you can still act as a bridge between roles.
 
@@ -79,13 +82,13 @@ If you specialise in multiple technical skills you can still act as a bridge bet
 - Outside of work, volunteering or open source is a great way
 - People mentioned the [Wheel of Misfortune](https://awesomeopensource.com/project/dastergon/wheel-of-misfortune) and Julia Evans' debugging games as good examples for practicing skills that are usually learned through experience
 
-## Progressing to a Staff+ role
+## Progressing to a StaffPlus role
 ### Career advice
-Understand your own values and set boundaries. Don't compromise too much for salary/title/position
+Coraline Ada Ehmke: [Understand your own values and set boundaries.](https://leaddev.com/leaddev-live/luminary-interview-coraline-ada-ehmke) Don't compromise too much for salary/title/position.
 
-Staff+ responsibilities should replace more hands on stuff; don't just try and do extra stuff on top. Talk to managers about helping to grow others (by delegation).
+StaffPlus responsibilities should replace more hands on stuff; don't just try and do extra stuff on top. Talk to managers about helping to grow others (by delegation).
 
-You can set your own goals and share them with the people you work with. Include how you will work with teams, how you plan to deliver on your goals, what it means in practice. Sabrina Leandro breaks down her quarterly goals into 6 week milestones, and then sets weekly plans.
+You can set your own goals and share them with the people you work with. Include how you will work with teams, how you plan to deliver on your goals, what it means in practice. [Sabrina Leandro breaks down her quarterly goals into 6 week milestones, and then sets weekly plans.](https://leaddev.com/leaddev-live/so-youre-staff-now-what)
 
 Other examples of personal planning:
 - [My yearly reflection and planning](https://www.daviddaly.me/2020/01/my-yearly-reflection-and-planning.html)
@@ -109,7 +112,7 @@ Other examples of personal planning:
 - If you reach a different decision, you could have different information or different values. Start by checking you have the same information.
 - Long form writing is a superpower. You can look inwards at what can be done better.
 - Find out who cares about what.
-- The goal is to be neutral. Diane Tang (distinguished engineer) spends much of her time with teams that don't report to her. She is user focused and can recommend solutions and shape conversations.
+- The goal is to be neutral. [Diane Tang](https://leaddev.com/leaddev-live/luminary-interview-diane-tang) spends much of her time with teams that don't report to her. She is user focused and can recommend solutions and shape conversations.
 
 Relationships with managers can fail when
 - there is a lack of trust (e.g. no autonomy* to make decisions/empower others; high level executors are just given projects to execute instead of being involved earlier)
@@ -150,7 +153,9 @@ Relationships with managers can fail when
 - Making sure documentation is up to date
 - Make sure technical debt is paid down
 
-## How Google Meet coped with COVID demand
+## Rapid scaling
+Samantha Schaevitz presented [How we grew Google meet 50x during COVID-19](https://leaddev.com/leaddev-live/scaling-incident-management-how-we-grew-google-meet-50x-during-covid19)
+
 They had 3 objectives
 
 1. Avoid outages (and failing that, degrade gracefully)
@@ -179,7 +184,12 @@ Things that helped structure the work:
 - Agreeing shared terminology
 - Setting up google groups for each workstream
 
-## Technical strategy power chords
+## Technical strategy
+These two talks both advised on strategy:
+
+- [Technical strategy power chords](https://leaddev.com/leaddev-live/technical-strategy-power-chords)
+- [To kill it with fire, or not kill it with fire](https://leaddev.com/leaddev-live/kill-it-fire-or-not-kill-it-fire)
+
 ### Pick only one goal
 e.g. lower error rates to < 1%, run migrations through an automatic pipeline, increase throughput of X to Y%
 
@@ -197,10 +207,6 @@ Strategy is not just a start/end state - it has to be executable like a recipe.
 
 Don't overspecify the end state, because your context will change
 
-### Further info
-- [Delivering on an architecture strategy](https://blog.thepete.net/blog/2019/12/09/delivering-on-an-architecture-strategy/)
-- [Stepping stones not milestones](https://medium.com/@jamesacowling/stepping-stones-not-milestones-e6be0073563f)
-
 ### Killing it with fire
 This is a high consequence decision that can affect teams for years and has ripple effects throughout the organisation
 
@@ -217,3 +223,7 @@ When considering migrations you might need prototyping or additional staffing du
 
 You should articulate your principles that should guide the migration e.g. risk appetite (users should not be 
 ed)
+
+### Further resources
+- [Delivering on an architecture strategy](https://blog.thepete.net/blog/2019/12/09/delivering-on-an-architecture-strategy/)
+- [Stepping stones not milestones](https://medium.com/@jamesacowling/stepping-stones-not-milestones-e6be0073563f)
