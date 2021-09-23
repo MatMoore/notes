@@ -27,6 +27,14 @@ A change to the ubiquitous language is a change to the model. "Find easier ways 
 - If the ubiquitous language is evolving but not being reflected in the document, it's probably not important enough to update. Archive the document to avoid confusion
 - If terms used in the document don't become part of the ubiquitous language, people are either not reading it or not finding it compelling
 
+## Kinds of models
+- One model should underlie design, implementation and team communication
+  - scope is pared down to the minimum needed to fulfil functional requirements
+  - UML object models
+- Education aids can include models unrelated to software design
+  - to provide more context / communicate general knowledge about the domain
+  - multiple, diverse explanations
+  - doesn't have to be UML (e.g. shipping timeline on p42)
 ## Ideas
 
 - "Binding the model and the implementation" - Prototyping with just a test framework and no UI enables interactive discussion with domain experts about the model and its consequences (p11)
@@ -35,3 +43,4 @@ A change to the ubiquitous language is a change to the model. "Find easier ways 
 - "If sophisticated domain experts don't understand the model, there's something wrong with the model" (p33)
 - You can used informal UML diagrams to anchor a discussion, but don't try and include everything. "Sketch a diagram of three to five objects central to the issue at hand" "Comprehensive diagrams of the entire object model overwhelm the reader" (p36)
 - Diagrams in a design document can be hand drawn - they should feel casual and temporary (p39)
+- 
