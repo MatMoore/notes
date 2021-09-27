@@ -1,5 +1,20 @@
 # Domain Driven Design
 
+## The domain vs the model
+The *domain* is "the subject area to which a user applies the program"
+
+Creating software requires a body of knowledge related to the users' activities
+
+A *model* is "a rigorously organized and selective abstraction of that knowledge"
+
+It is selected to serve a purpose (analogy to documentary making on p3)
+
+It can be communicated in different ways:
+
+- diagrams
+- carefully written code
+- writing
+
 ## Ubiquitous language
 
 Includes
