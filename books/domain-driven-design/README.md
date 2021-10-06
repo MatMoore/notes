@@ -65,6 +65,19 @@ The design should feed back into the model. Specialised roles for analysis, mode
 
 Anyone touching the model should spend time touching the code. Anyone touching the code should be involved in modelling and have contact with domain experts.
 
+### Influences
+
+- "responsibility-driven design" (Wirfs-Brock 2003).
+- "design by contract" (Meyer 1988)
+- Larman 1998
+
+## Building blocks
+- Express the model with *services*, *entities*, and *value objects*
+- Isolate the domain with a *layered architecture*
+- Encapsulate value objects and entities with *factories*
+- Encapsulate value objects and maintain the integrity of entities with *aggregates*
+- Access entities and aggregates with *repositories*
+
 ## Ideas
 
 - "Binding the model and the implementation" - Prototyping with just a test framework and no UI enables interactive discussion with domain experts about the model and its consequences (p11)
