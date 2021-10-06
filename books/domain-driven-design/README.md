@@ -73,12 +73,17 @@ Anyone touching the model should spend time touching the code. Anyone touching t
 
 ## Building blocks
 - Express the model with *services*, *entities*, and *value objects*
-- Isolate the domain with a *layered architecture*
+- Isolate the domain from UI, application tasks, infrastructure with a *layered architecture*
 - Encapsulate value objects and entities with *factories*
 - Encapsulate value objects and maintain the integrity of entities with *aggregates*
 - Access entities and aggregates with *repositories*
 
-## Ideas
+### Layered architectures
+- MVC and variations (Fowler 2002)
+- Model-view seperation pattern/Application coordinator (Larman 1998)
+- 
+
+## General ideas
 
 - "Binding the model and the implementation" - Prototyping with just a test framework and no UI enables interactive discussion with domain experts about the model and its consequences (p11)
 - "knowledge crunching is not a solitary activity" - raw material comes from domain experts, users of existing systems, prior experience of tech team. Without collaboration with domain experts, the knowledge built up is shallow, and the software is disconnected from their way of thinking.
@@ -87,3 +92,4 @@ Anyone touching the model should spend time touching the code. Anyone touching t
 - You can used informal UML diagrams to anchor a discussion, but don't try and include everything. "Sketch a diagram of three to five objects central to the issue at hand" "Comprehensive diagrams of the entire object model overwhelm the reader" (p36)
 - Diagrams in a design document can be hand drawn - they should feel casual and temporary (p39)
 - Don't mislead users by hiding the model - example of favourites in IE being modelled as files with filename restrictions (p57)
+- Frameworks should allow application developers more time to focus on the core business problems (p75)
