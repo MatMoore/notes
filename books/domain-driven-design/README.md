@@ -78,6 +78,28 @@ Anyone touching the model should spend time touching the code. Anyone touching t
 - Encapsulate value objects and maintain the integrity of entities with *aggregates*
 - Access entities and aggregates with *repositories*
 
+### Associations
+Bidirectional => both objects can be understood only together
+
+#### Imposing a direction
+Can impose a direction on the association when domain has a natural bias. E.g. presidents of country go from country -> president (p83)
+
+#### Qualifying a relationship
+E.g. a country has one president in a given period of time, so can go from many-to-many to 1-many.
+
+### Entities (Reference objects)
+"Anything that has continuity through a life cycle and distictions independent of attributes that are import to an application's user" p91
+
+Model should define what it means to be the same thing.
+
+Identity could be significant outside of the program, but may be only important within the system (e.g. a process id)
+
+*Add only behaviour that is essential to the concept and attributes that are required by that behaviour* p93
+
+
+
+
+
 ### Layered architectures
 - MVC and variations (Fowler 2002)
 - Model-view seperation pattern/Application coordinator (Larman 1998)
