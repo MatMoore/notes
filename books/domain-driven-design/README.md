@@ -78,6 +78,8 @@ Anyone touching the model should spend time touching the code. Anyone touching t
 - Encapsulate value objects and maintain the integrity of entities with *aggregates*
 - Access entities and aggregates with *repositories*
 
+Services can refer to domain layer services, application layer services, infrastructure services (keep these seperate) e.g. Funds Transfer App Service vs Domain Service vs Notification Service (p107)
+
 ### Associations
 Bidirectional => both objects can be understood only together
 
@@ -96,14 +98,14 @@ Identity could be significant outside of the program, but may be only important 
 
 *Add only behaviour that is essential to the concept and attributes that are required by that behaviour* p93
 
+### Value objects
+Use when we care about *what* they are not *which* or *who* they are
 
-
-
+Bidirectional associations don't make sense without identity
 
 ### Layered architectures
 - MVC and variations (Fowler 2002)
 - Model-view seperation pattern/Application coordinator (Larman 1998)
-- 
 
 ## General ideas
 
